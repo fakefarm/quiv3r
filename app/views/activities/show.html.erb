@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @activity.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @activity.body %>
+</p>
+
+<p>
+  <strong>Public:</strong>
+  <%= @activity.public %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @activity.website %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @activity.location %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @activity.price %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @activity.age %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @activity.hours %>
+</p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @activity.environment %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @activity.season %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>
