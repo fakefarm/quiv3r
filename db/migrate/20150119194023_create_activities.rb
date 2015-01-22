@@ -11,17 +11,17 @@ class CreateActivities < ActiveRecord::Migration
       # kid friendly biking
       # skiing
       t.boolean :public
-      t.string :website
-      t.string :address
-      t.string :city
-      t.string :state
-      t.integer :zip
-      t.string :price
-      t.string :age
-      t.string :hours
-      t.string :environment
-      t.string :season
-      t.string :submitter
+      # t.string :website
+      # t.string :address
+      # t.string :city
+      # t.string :state
+      # t.integer :zip
+      # t.string :price
+      # t.string :age
+      # t.string :hours
+      # t.string :environment
+      # t.string :season
+      # t.string :submitter
 
       t.timestamps
     end

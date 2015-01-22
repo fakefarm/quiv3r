@@ -1,0 +1,9 @@
+= link_to 'New Activity', new_activity_path
+h1 Activities
+- @activities.each do |activity|
+  p
+    span= activity.category
+    = activity.title
+    '   |
+    = activity.body
+
