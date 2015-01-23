@@ -4,11 +4,14 @@
   border-radius: $base-border-radius;
   color: white;
   display: inline-block;
-  font-size: $base-font-size;
   font-weight: bold;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
+
+  // _dw TODO - make the desktop version.
+  font-size: $base-font-size * .5;
+  width: 100%;
 
   &:hover {
     background-color: $hover-button-color;

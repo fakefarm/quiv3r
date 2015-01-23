@@ -35,8 +35,7 @@ select[multiple=multiple] {
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-size: 8px;
   margin-bottom: $base-spacing / 2;
   padding: ($base-spacing / 3) ($base-spacing / 3);
   width: 100%;
@@ -54,6 +53,10 @@ select[multiple=multiple] {
 
 textarea {
   resize: vertical;
+}
+
+input[type="text"] {
+  font-size: 8px;
 }
 
 input[type="search"] {

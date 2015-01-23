@@ -17,6 +17,12 @@ $h6-font-size: $base-font-size;
 $base-line-height: 1.5;
 $header-line-height: 1.25;
 
+// Spacing
+$sml-space: 0.5em;
+$med-space: 1em;
+$lrg-space: 1.5em;
+$xlg-space: 2.5em;
+
 // Other Sizes
 $base-border-radius: 3px !default;
 $base-spacing: $base-line-height * 1em;
@@ -24,7 +30,8 @@ $base-z-index: 0;
 
 
 // Colors
-$blue: #477DCA;
+$sea: rgb(214, 255, 245);
+$blue: #ff6666;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
@@ -33,7 +40,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: $sea;
 
 // Font Colors
 $base-font-color: $dark-gray;

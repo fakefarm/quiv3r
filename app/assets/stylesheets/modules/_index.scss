@@ -1,0 +1,42 @@
+.logo {
+  @include clearfix;
+  img {
+    width: 100%;
+    @include shift(2);
+    @include span-columns(8);
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+    }
+  }
+}
+.index-content {
+  background: white;
+  padding: $sml-space;
+  border-radius: 2px;
+
+  @include media($medium-screen) {
+      border-radius: 4px;
+      padding: $lrg-space;
+    }
+}
+
+.btn {
+  a {
+    background: $light-red;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: $base-font-size * .25;
+    padding: $sml-space *.75;
+
+    @include media($medium-screen) {
+      font-size: $base-font-size;
+      padding: $med-space;
+    }
+    &:hover {
+      background: darken($light-red, 10);
+      color: white;
+      @include transition(all 200ms ease-in-out);
+    }
+  }
+}
