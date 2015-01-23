@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20150119194023) do
     t.string   "body"
     t.string   "category"
     t.boolean  "public"
+    t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

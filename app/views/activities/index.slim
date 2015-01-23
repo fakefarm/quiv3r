@@ -1,9 +1,11 @@
 .btn.button
   = link_to 'New Activity', new_activity_path
 - @activities.each do |activity|
-  p
-    span= activity.category
-    = activity.title
-    '   |
-    = activity.body
+  .type= activity.category
+  h1= activity.title
+  p= activity.body
+  p.author
+    | by
+    '
+    = activity.author
 

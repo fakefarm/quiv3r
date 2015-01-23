@@ -21,7 +21,7 @@ class CreateActivities < ActiveRecord::Migration
       # t.string :hours
       # t.string :environment
       # t.string :season
-      # t.string :submitter
+      t.string :author
 
       t.timestamps
     end
