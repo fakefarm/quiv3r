@@ -1,0 +1,11 @@
+= render 'shared/nav'
+p#notice= notice
+
+.type=@activity.category
+h1= @activity.title
+p = @activity.body
+p.author
+  | by
+  '
+  = @activity.author
+= link_to 'Edit', edit_activity_path(@activity)

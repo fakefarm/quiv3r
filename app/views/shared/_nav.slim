@@ -1,7 +1,11 @@
 ul
-  li
-    = link_to 'New', new_activity_path
-  li
-    = link_to 'Tags', '/tags'
-  li
-    = link_to 'All', '/'
+  - if request.path != new_activity_path
+    li
+      = link_to 'Add New', new_activity_path
+  - if request.path != '/tags'
+    li
+      = link_to 'Filter by tags', '/tags'
+  - if request.path != '/'
+    li
+      = link_to 'All Activities', '/'
+hr
