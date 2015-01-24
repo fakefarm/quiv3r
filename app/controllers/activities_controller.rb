@@ -13,6 +13,11 @@ class ActivitiesController < ApplicationController
     render :index
   end
 
+  def tags
+    @activities = Activity.all.map { |a| a.category }.uniq
+    render :tags
+  end
+
   def new
     @activity = Activity.new
   end

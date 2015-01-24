@@ -1,0 +1,4 @@
+= render 'shared/nav'
+h1 All tags
+- @activities.each do |activity|
+  h1= link_to activity, "/tag/#{activity}"
