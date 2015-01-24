@@ -1,7 +1,11 @@
 .btn.button
   = link_to 'New Activity', new_activity_path
+- if request.path == '/'
+  h1 All Activites
+- else
+  h1= params[:category]
 - @activities.each do |activity|
-  .type= activity.category
+  .type= link_to activity.category, "/tag/#{activity.category}"
   h1= activity.title
   p= activity.body
   p.author
