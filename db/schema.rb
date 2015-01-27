@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 20150119194023) do
   create_table "activities", force: true do |t|
     t.string   "title"
     t.string   "body"
-    t.string   "category"
     t.boolean  "public"
     t.string   "author"
+    t.string   "website"
+    t.string   "google_url"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

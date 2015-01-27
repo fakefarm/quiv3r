@@ -2,7 +2,7 @@ class ActivitiesController < ApplicationController
   before_action :set_activity, only: [:show, :edit, :update, :destroy]
 
   def index
-    @activities = Activity.all
+    @activities = Activity.all.reverse
   end
 
   def show
@@ -65,6 +65,6 @@ class ActivitiesController < ApplicationController
     end
 
     def activity_params
-      params.require(:activity).permit(:title, :body, :category, :author)
+      params.require(:activity).permit(:title, :body, :category, :author, :website, :google_url)
     end
 end

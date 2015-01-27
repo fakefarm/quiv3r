@@ -1,8 +1,14 @@
 = render 'shared/nav'
 p#notice= notice
 
-.type=@activity.category
+.type = @activity.category
+
 h1= @activity.title
+p
+  | visit their
+  '
+  = link_to 'web site', @activity.website
+p= link_to 'location', "https://www.google.com/search?q=#{@activity.google_url}", target: "_blank"
 p = @activity.body
 p.author
   | by
