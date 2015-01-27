@@ -40,6 +40,10 @@ select[multiple=multiple] {
   padding: ($base-spacing / 3) ($base-spacing / 3);
   width: 100%;
 
+  @include media($medium-screen) {
+    font-size: 18px;
+  }
+
   &:hover {
     border-color: $form-border-color-hover;
   }
@@ -57,6 +61,9 @@ textarea {
 
 input[type="text"] {
   font-size: 8px;
+  @include media($medium-screen) {
+    font-size: 18px;
+  }
 }
 
 input[type="search"] {
