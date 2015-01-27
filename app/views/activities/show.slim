@@ -13,5 +13,5 @@ p = @activity.body
 p.author
   | by
   '
-  = @activity.author
+  = link_to @activity.author, "http://www.twitter.com/#{@activity.author}", target: "_blank"
 = link_to 'Edit', edit_activity_path(@activity)
