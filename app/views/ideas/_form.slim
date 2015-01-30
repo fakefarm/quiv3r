@@ -1,0 +1,13 @@
+= form_for(@idea) do |f|
+  - if @idea.errors.any?
+    #error_explanation
+      h2= "#{pluralize(@idea.errors.count, "error")} > prohibited this idea from being saved:"
+      ul
+        - @idea.errors.full_messages.each do |message|
+          li= message
+  .field= f.text_field :title, placeholder: 'Title: "Backcoutry Pizza"'
+  .field= f.text_field :tag, placeholder: 'Tag: game'
+  .field= f.text_area :body, rows: 7, placeholder: 'Description: "Pizza is great and kids eat free every Tuesday until 7pm."'
+  .actions
+    = f.submit 'submit'
+

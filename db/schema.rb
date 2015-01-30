@@ -16,14 +16,12 @@ ActiveRecord::Schema.define(version: 20150119194023) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "activities", force: true do |t|
+  create_table "ideas", force: true do |t|
     t.string   "title"
-    t.string   "body"
+    t.text     "body"
     t.boolean  "public"
     t.string   "author"
-    t.string   "website"
-    t.string   "google_url"
-    t.string   "category"
+    t.string   "tag"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

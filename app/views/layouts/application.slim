@@ -1,12 +1,13 @@
 doctype html
 html
   head
-    title Quiv3r
+    title QUIV3R
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     meta content="initial-scale = 2.3, user-scalable = no" name="viewport"
   body
+    p.layout-logo QUIV3R
+    = render 'shared/nav'
     .l-container.index-content
-      p quiv3r
       = yield

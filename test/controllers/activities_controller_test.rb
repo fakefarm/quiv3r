@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class ActivitiesControllerTest < ActionController::TestCase
+class IdeasControllerTest < ActionController::TestCase
   setup do
-    @activity = activities(:one)
+    @idea = ideas(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:activities)
+    assert_not_nil assigns(:ideas)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class ActivitiesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create activity" do
-    assert_difference('Activity.count') do
-      post :create, activity: { age: @activity.age, body: @activity.body, environment: @activity.environment, hours: @activity.hours, location: @activity.location, price: @activity.price, public: @activity.public, season: @activity.season, title: @activity.title, website: @activity.website }
+  test "should create idea" do
+    assert_difference('Idea.count') do
+      post :create, idea: { age: @idea.age, body: @idea.body, environment: @idea.environment, hours: @idea.hours, location: @idea.location, price: @idea.price, public: @idea.public, season: @idea.season, title: @idea.title, website: @idea.website }
     end
 
-    assert_redirected_to activity_path(assigns(:activity))
+    assert_redirected_to idea_path(assigns(:idea))
   end
 
-  test "should show activity" do
-    get :show, id: @activity
+  test "should show idea" do
+    get :show, id: @idea
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @activity
+    get :edit, id: @idea
     assert_response :success
   end
 
-  test "should update activity" do
-    patch :update, id: @activity, activity: { age: @activity.age, body: @activity.body, environment: @activity.environment, hours: @activity.hours, location: @activity.location, price: @activity.price, public: @activity.public, season: @activity.season, title: @activity.title, website: @activity.website }
-    assert_redirected_to activity_path(assigns(:activity))
+  test "should update idea" do
+    patch :update, id: @idea, idea: { age: @idea.age, body: @idea.body, environment: @idea.environment, hours: @idea.hours, location: @idea.location, price: @idea.price, public: @idea.public, season: @idea.season, title: @idea.title, website: @idea.website }
+    assert_redirected_to idea_path(assigns(:idea))
   end
 
-  test "should destroy activity" do
-    assert_difference('Activity.count', -1) do
-      delete :destroy, id: @activity
+  test "should destroy idea" do
+    assert_difference('Idea.count', -1) do
+      delete :destroy, id: @idea
     end
 
-    assert_redirected_to activities_path
+    assert_redirected_to ideas_path
   end
 end
