@@ -5,9 +5,9 @@
       ul
         - @idea.errors.full_messages.each do |message|
           li= message
-  .field= f.text_field :title, placeholder: 'Title: "Backcoutry Pizza"'
-  .field= f.text_field :tag, placeholder: 'Tag: game'
-  .field= f.text_area :body, rows: 7, placeholder: 'Description: "Pizza is great and kids eat free every Tuesday until 7pm."'
+  .field= f.text_field :title, placeholder: 'Title: "Lazy hanger"'
+  .field= f.text_field :tag, placeholder: 'Tag: tool'
+  .field= f.text_area :body, rows: 7, placeholder: 'Description: "A hanger that auto-fits the shirt."'
   .actions
     = f.submit 'submit'
 
