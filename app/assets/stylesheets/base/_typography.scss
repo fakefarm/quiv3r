@@ -43,7 +43,10 @@ h6 {
 
   p {
     color: $base-font-color;
-    line-height: $base-line-height;
+    line-height: $base-line-height-small;
+    @include media($medium-screen) {
+      line-height: $base-line-height;
+    }
   }
 
   a {
@@ -57,10 +60,13 @@ h6 {
     font-family: $sans-serif;
     font-size: 0.7em;
     font-weight: 600;
-    margin-bottom: 2em;
     padding: 0.1em 0;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: $sml-space;
+    @include media($medium-screen) {
+      margin-bottom: $lrg-space;
+    }
   }
 
   h1 {
@@ -79,7 +85,7 @@ h6 {
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.5em;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.25em;
 
     @include media($medium-screen) {
       font-size: 1.3em;

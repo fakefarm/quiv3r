@@ -17,9 +17,11 @@ $h6-font-size: $base-font-size;
 
 // Line height
 $base-line-height: 1.5;
+$base-line-height-small: 0.95;
 $header-line-height: 1.25;
 
 // Spacing
+$xsm-space: 0.25em;
 $sml-space: 0.5em;
 $med-space: 1em;
 $lrg-space: 1.5em;
@@ -33,7 +35,7 @@ $base-z-index: 0;
 
 // Colors
 $sea: rgb(214, 255, 245);
-$blue: #ff6666;
+$salmon: #ff6666;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
@@ -42,11 +44,11 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: $sea;
+$base-background-color: $salmon;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $salmon;
 
 // Link Colors
 $base-link-color: $base-accent-color;
