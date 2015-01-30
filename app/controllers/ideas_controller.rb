@@ -2,6 +2,7 @@ class IdeasController < ApplicationController
   before_action :set_idea, only: [:show, :edit, :update, :destroy]
 
   def index
+    @idea = Idea.new
     @ideas = Idea.all.reverse
   end
 

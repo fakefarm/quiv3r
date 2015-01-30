@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(version: 20150119194023) do
     t.string   "title"
     t.text     "body"
     t.boolean  "public"
-    t.string   "author"
+    t.integer  "user_id"
     t.string   "tag"
+    t.boolean  "admin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

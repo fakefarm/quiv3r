@@ -4,8 +4,9 @@ class CreateIdeas < ActiveRecord::Migration
       t.string  :title
       t.text    :body
       t.boolean :public
-      t.string  :author
+      t.integer  :user_id
       t.string  :tag
+      t.boolean :admin
 
       t.timestamps
     end
