@@ -11,7 +11,6 @@ idea = Idea.create({ title: "lazy man hanger",
                     public: true,
                     user_id: 1,
                     tag: 'tool',
-                    admin: true
                     })
 
 idea = Idea.create({ title: "Cat Math Do",
@@ -19,6 +18,12 @@ idea = Idea.create({ title: "Cat Math Do",
                     public: true,
                     user_id: 1,
                     tag: 'game',
-                    admin: true
+                    })
+
+idea = Idea.create({ title: "Kids allowance",
+                    body:"An app that tracks kids activity of: following house rules, productive time, chores. Those are ways to earn money. Then, there are ways to spend which include; breaking the rules, spending on toys, or spending on unproductive activities. I think the app could be one that kids use to learn to track their own times.",
+                    public: true,
+                    user_id: 1,
+                    tag: 'app',
                     })
 
