@@ -1,7 +1,9 @@
-
 - unless request.path == '/'
   h1= params[:tag]
-= render "form"
+
+#idea-form
+  = render "form"
+
 - @ideas.each do |idea|
   h1= link_to idea.title, idea
   p= idea.body

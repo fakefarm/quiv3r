@@ -1,8 +1,8 @@
 class IdeasController < ApplicationController
   before_action :set_idea, only: [:show, :edit, :update, :destroy]
+  before_action :new_idea, except: [:show]
 
   def index
-    @idea = Idea.new
     @ideas = Idea.all.reverse
   end
 
@@ -20,7 +20,6 @@ class IdeasController < ApplicationController
   end
 
   def new
-    @idea = Idea.new
   end
 
   def edit
@@ -63,6 +62,10 @@ class IdeasController < ApplicationController
   private
     def set_idea
       @idea = Idea.find(params[:id])
+    end
+
+    def new_idea
+      @idea = Idea.new
     end
 
     def idea_params
