@@ -7,6 +7,7 @@ class IdeasController < ApplicationController
   end
 
   def show
+    @votes = Vote.all
   end
 
   def tag

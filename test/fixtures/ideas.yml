@@ -1,25 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  body: MyString
-  public: false
-  website: MyString
-  location: MyString
-  price: MyString
-  age: MyString
-  hours: MyString
-  environment: MyString
-  season: MyString
-
-two:
-  title: MyString
-  body: MyString
-  public: false
-  website: MyString
-  location: MyString
-  price: MyString
-  age: MyString
-  hours: MyString
-  environment: MyString
-  season: MyString
+  title: 'code along'
+  body: 'a site to learn to code while its recorded'
+  public: true
+  user_id: 1
+  tag: 'app'

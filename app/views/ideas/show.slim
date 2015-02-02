@@ -3,4 +3,8 @@ p#notice= notice
 .type = link_to @idea.tag, "/tag/#{@idea.tag}"
 
 h1 = @idea.title
-p = @idea.body
+p.idea-body = @idea.body
+.votes
+  p up vote
+  p total votes
+
