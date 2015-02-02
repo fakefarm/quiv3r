@@ -7,7 +7,7 @@ class IdeasController < ApplicationController
   end
 
   def show
-    @votes = Vote.all
+    @votes = Vote.where(idea_id: @idea.id)
   end
 
   def tag
